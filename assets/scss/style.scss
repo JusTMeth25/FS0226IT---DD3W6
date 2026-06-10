@@ -1,0 +1,40 @@
+@use "../scss/partials/variables" as v;
+
+
+body {
+  background-color: v.$bgColor;
+}
+
+h1 {
+  font-size: v.$titleSize;
+  color: v.$titleColor;
+}
+
+section {
+  background-color: aqua;
+  h2 {
+    font-size: v.$titleSection;
+	color: v.$titleColor;
+  }
+}
+
+article {
+  background-color: aquamarine;
+  h2 {
+    font-size: v.$titleArticle;
+	color: v.$titleColor;
+  }
+}
+
+.btn {
+  padding: 8px 16px;
+  &:hover {
+    transform: translateY(-2px);
+  }
+  &.btn-large {
+    padding: 16px 32px;
+  }
+  &.disabled {
+    opacity: 0.5;
+  }
+}
